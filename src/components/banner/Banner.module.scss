@@ -1,0 +1,43 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(32px) rem(16px);
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.banner__text:nth-of-type(odd) {
+  color: $color-gray;
+}
+
+.banner__button {
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: rem(0.5px);
+    transition: width 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+@include mq-wide {
+  .banner {
+    flex-direction: row-reverse;
+    padding: rem(32px);
+    color: $color-black;
+    background-color: $color-white;
+    margin-bottom: 0;
+  }
+
+  .banner__button {
+    &:after {
+      background-color: $color-black;
+    }
+  }
+}

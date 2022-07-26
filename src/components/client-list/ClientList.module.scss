@@ -1,0 +1,29 @@
+.client_list {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: $color-black;
+  padding-top: rem(92px);
+  color: $color-white;
+  padding-bottom: rem(45px);
+}
+
+.client_list__title {
+  font-size: rem(34px);
+  padding: 0rem (32px);
+  margin-bottom: rem(32px);
+}
+
+.client_list__paragraph {
+  font-size: rem(18px);
+  padding: 0rem (32px);
+  margin-bottom: rem(32px);
+}
+
+.client_list__text {
+  display: block;
+}
+
+.client_list__text:first-of-type {
+  margin-bottom: rem(16px);
+}

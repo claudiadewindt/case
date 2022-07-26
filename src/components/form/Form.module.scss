@@ -1,0 +1,119 @@
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  padding: rem(48px) rem(36px);
+}
+
+.form_container {
+  width: 100%;
+}
+
+.form__title {
+  font-size: rem(26px);
+  margin-bottom: rem(38px);
+  text-transform: uppercase;
+}
+
+.form__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: rem(36px);
+}
+
+.form__label {
+  font-size: rem(16px);
+  text-transform: uppercase;
+}
+
+.form__input,
+.form__textarea {
+  position: relative;
+  border: none;
+  margin-bottom: rem(10px);
+  border-bottom: 1px solid $color-gray-light;
+}
+
+.form__error::first-letter,
+.form__error_text::first-letter {
+  text-transform: uppercase;
+}
+
+.form__textarea {
+  height: rem(100px);
+}
+
+.form__button,
+.form__button_error {
+  width: 100%;
+  border-radius: 40px;
+  font-size: rem(18px);
+  text-transform: uppercase;
+  padding: rem(12px) rem(32px);
+}
+
+.form__button {
+  border: 1px solid $color-black;
+  color: $color-black;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}
+
+.form__button_error {
+  border: 1px solid $color-purple;
+  color: $color-purple;
+}
+
+.form__error,
+.form__error_text {
+  position: absolute;
+  font-size: rem(12px);
+  color: $color-red;
+}
+
+.form__error {
+  top: rem(50px);
+  left: 0;
+}
+
+.form__error_text:last-of-type {
+  top: rem(130px);
+}
+
+@include mq-regular {
+  .form {
+    display: flex;
+    flex-direction: row;
+    gap: rem(64px);
+  }
+
+  .form__title {
+    font-size: rem(48px);
+    width: rem(305px);
+    line-height: 1.5em;
+  }
+
+  .form__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    column-gap: rem(38px);
+  }
+
+  .form__button,
+  .form__button_error {
+    width: 50%;
+  }
+
+  .form__error,
+  .form__error_text {
+    font-size: rem(16px);
+  }
+}

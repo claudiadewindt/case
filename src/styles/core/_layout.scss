@@ -1,0 +1,23 @@
+html,
+body {
+  @include text-rendering;
+}
+
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+  font-family: $font-maison-light;
+  background-color: white;
+}
+
+html {
+  @include fluidBaseRem(410, 750, 16, 32);
+
+  -webkit-marquee-increment: 0vw; // fluid typo fix for safari https://www.sarasoueidan.com/blog/safari-fluid-typography-bug-fix/
+}
+
+@include mq-regular {
+  html {
+    @include fluidBaseRem(1440, 2880, 16, 32);
+  }
+}

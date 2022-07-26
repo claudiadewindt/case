@@ -1,0 +1,50 @@
+.hero {
+  background-image: url("/assets/images/hero-img.png");
+  color: $color-white;
+  width: 100%;
+  height: rem(415px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: bottom;
+  background-position: center bottom;
+  background-size: 230%;
+  background-repeat: no-repeat;
+}
+
+.hero__label {
+  font-size: rem(16px);
+  text-transform: uppercase;
+  margin-bottom: rem(36px);
+  padding-left: rem(16px);
+}
+
+.hero__title {
+  font-size: rem(34px);
+  padding-left: rem(16px);
+  margin-bottom: rem(22px);
+  line-height: 100%;
+  width: rem(378px);
+}
+
+.hero__text:nth-of-type(even) {
+  font-family: $font-maison-bold;
+}
+
+@include mq-regular {
+  .hero {
+    width: 100%;
+    height: rem(628px);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero__title {
+    width: rem(579px);
+    margin-bottom: rem(84px);
+  }
+
+  .hero__label {
+    margin-bottom: rem(32px);
+  }
+}

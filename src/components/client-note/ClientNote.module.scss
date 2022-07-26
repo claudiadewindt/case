@@ -1,0 +1,58 @@
+@import "src/styles/partials/lists";
+
+.note__list {
+  @extend .list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-white;
+  background-color: $color-black;
+  padding: rem(24px);
+  line-height: 1em;
+  z-index: 1;
+}
+
+.note__item {
+  width: rem(364px);
+  margin-bottom: rem(10px);
+  padding-top: rem(24px);
+
+  &:first-of-type {
+    padding-top: rem(5px);
+    padding-bottom: rem(36px);
+    border-bottom: 1px solid $color-gray-light;
+  }
+}
+
+.note__title {
+  margin-top: rem(12px);
+}
+
+.note__paragraph {
+  margin-top: rem(12px);
+  color: $color-white;
+}
+
+@include mq-regular {
+  .note__section {
+    width: 50%;
+  }
+  .note__list {
+    width: 100%;
+    height: rem(568px);
+    width: 100%;
+    padding: rem(65px);
+  }
+
+  .note__item {
+    width: rem(410px);
+    &:nth-of-type(2) {
+      border-bottom: 1px solid $color-gray-light;
+      padding-bottom: rem(36px);
+    }
+  }
+
+  .note__paragraph:nth-of-type(2) {
+    word-break: break-all;
+  }
+}

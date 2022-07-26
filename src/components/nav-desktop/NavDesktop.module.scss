@@ -1,0 +1,39 @@
+@import "src/styles/partials/lists";
+
+.navDesktop__list {
+  @extend .list;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-white;
+  background-color: $color-black;
+  width: rem(686px);
+  padding: 0;
+  line-height: 1em;
+}
+
+.navDesktop__button {
+  text-transform: uppercase;
+}
+
+.navDesktop__list__item {
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: rem(0.5px);
+    background: $color-white;
+    transition: width 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navDesktop {
+    display: none;
+  }
+}

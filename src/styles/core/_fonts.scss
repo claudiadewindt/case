@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "MaisonNeue-Light";
+  font-weight: 400;
+  font-style: normal;
+
+  src: url("../../../public/fonts/MaisonNeueWEB-Light.woff") format("woff"),
+    url("../../../public/fonts/MaisonNeueWEB-Light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MaisonNeue-Medium";
+  font-weight: 400;
+  font-style: normal;
+
+  src: url("../../../public/fonts/MaisonNeueWEB-Medium.woff") format("woff"),
+    url("../../../public/fonts/MaisonNeueWEB-Medium.woff2") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MaisonNeue-Bold";
+  font-weight: 400;
+  font-style: normal;
+
+  src: url("../../../public/fonts/MaisonNeueWEB-Bold.woff") format("woff"),
+    url("../../../public/fonts/MaisonNeueWEB-Bold.woff2") format("woff2");
+  font-display: swap;
+}

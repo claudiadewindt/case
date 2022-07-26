@@ -1,0 +1,102 @@
+@import "src/styles/partials/lists";
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__list {
+  @extend .list;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__item {
+  position: relative;
+  width: 100%;
+  height: rem(484px);
+  background-position: center;
+  background-size: cover;
+}
+
+.card__content {
+  position: absolute;
+  color: $color-white;
+  bottom: rem(24px);
+  left: rem(24px);
+}
+
+.card__slogan {
+  position: relative;
+  margin-top: rem(16px);
+  font-size: rem(24px);
+  width: rem(362px);
+}
+
+.card__note {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card__note_item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: rem(484px);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.clientNote {
+  position: relative;
+  width: 100%;
+}
+
+@include mq-regular {
+  .card__list {
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+  }
+
+  .card__item {
+    width: 50%;
+    height: rem(568px);
+    margin: 0;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .card__note {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card__note_item {
+    position: relative;
+    height: rem(568px);
+  }
+
+  .card__slogan {
+    width: rem(656px);
+    font-size: (24px);
+  }
+}
+
+@include mq-wide {
+  .card__slogan {
+    width: rem(656px);
+    font-size: (48px);
+  }
+}

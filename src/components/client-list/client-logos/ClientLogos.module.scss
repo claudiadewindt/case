@@ -1,0 +1,45 @@
+@import "src/styles/partials/lists";
+
+.client_logos {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: $color-black;
+  padding: rem(32px) rem(22px);
+}
+
+.client_logos__list {
+  @extend .list;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: rem(83px);
+  column-gap: rem(127px);
+  justify-items: end;
+}
+
+.client_logos__item {
+  width: rem(114px);
+}
+
+.client_logos__img {
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+@include mq-regular {
+  .client_logos {
+    padding: rem(64px) rem(224px);
+  }
+
+  .client_logos__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: rem(238px);
+  }
+
+  .client_logos__item {
+    width: rem(171px);
+  }
+}
