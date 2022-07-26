@@ -1,9 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-### Lighthouse
-
-<img width="807" alt="Performance" src="https://user-images.githubusercontent.com/55986532/180989737-671cbc25-4113-491d-b555-f878d0aed3c1.png">
-
 ## Getting Started
 
 First, run the development server:
