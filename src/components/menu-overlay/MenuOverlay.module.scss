@@ -13,6 +13,7 @@
   background-color: $color-black;
   color: $color-white;
   overflow: hidden;
+  overflow-y: scroll;
   padding: rem(24px) rem(16px) 0 rem(16px);
 }
 
